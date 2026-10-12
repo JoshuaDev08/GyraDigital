@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Camera, Monitor, Server } from "lucide-react";
-import logoAsset from "../assets/logo.png";
+import logoAsset from "../assets/Logo.png";
 
 function Footer() {
   return (
