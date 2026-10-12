@@ -1,0 +1,118 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "gyra";
+  default: true;
+  prefersdark: true;
+  color-scheme: dark;
+
+  /* =======================================================
+     BASE
+     ======================================================= */
+
+  --color-base-100: oklch(0 0 0);
+  --color-base-200: oklch(0.08 0 0);
+  --color-base-300: oklch(0.14 0 0);
+  --color-base-content: oklch(0.985 0 0);
+
+  /* =======================================================
+     BRAND
+     ======================================================= */
+
+  --color-primary: oklch(0.985 0 0);
+  --color-primary-content: oklch(0 0 0);
+
+  --color-secondary: oklch(0.18 0 0);
+  --color-secondary-content: oklch(0.985 0 0);
+
+  --color-accent: oklch(0.28 0 0);
+  --color-accent-content: oklch(0.985 0 0);
+
+  --color-neutral: oklch(0.1 0 0);
+  --color-neutral-content: oklch(0.985 0 0);
+
+  /* =======================================================
+     STATUS COLORS
+     ======================================================= */
+
+  --color-info: oklch(0.72 0.13 245);
+  --color-info-content: oklch(0.1 0 0);
+
+  --color-success: oklch(0.72 0.16 150);
+  --color-success-content: oklch(0.1 0 0);
+
+  --color-warning: oklch(0.84 0.17 85);
+  --color-warning-content: oklch(0.1 0 0);
+
+  --color-error: oklch(0.62 0.23 25);
+  --color-error-content: oklch(0.985 0 0);
+
+  /* =======================================================
+     COMPONENT SHAPE
+     ======================================================= */
+
+  --radius-selector: 0.25rem;
+  --radius-field: 0.375rem;
+  --radius-box: 0.75rem;
+
+  /* =======================================================
+     COMPONENT SIZE
+     ======================================================= */
+
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  /* =======================================================
+     BORDER / EFFECTS
+     ======================================================= */
+
+  --border: 1px;
+
+  --depth: 0;
+  --noise: 0;
+}
+
+/*
+ * =========================================================
+ * TAILWIND CUSTOM TOKENS
+ * =========================================================
+ */
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+html {
+  scroll-behavior: smooth;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-base-content/80) var(--color-base-200);
+}
+
+/* Chrome / Edge / Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-base-200);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-base-content);
+  border: 2px solid var(--color-base-200);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(
+    in oklab,
+    var(--color-base-content) 75%,
+    var(--color-base-300)
+  );
+}
