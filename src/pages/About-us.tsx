@@ -4,7 +4,7 @@ import { Code2, Megaphone, Crown } from "lucide-react";
 
 import developerImage from "../assets/Leadership/JoshuaPose.png";
 import marketingImage from "../assets/Leadership/Dexter.png";
-import ceoImage from "../assets/Leadership/LancePose.png";
+import ceoImage from "../assets/Leadership/Lance2.png";
 
 const stats = [
   {

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, ArrowRight } from "lucide-react";
-import logoAsset from "../assets/logo.png";
+import logoAsset from "../assets/Logo.png";
 
 const containerVariants = {
   hidden: {},
